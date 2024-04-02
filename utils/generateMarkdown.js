@@ -14,8 +14,7 @@ function renderLicenseLink(license) {
   if (!license) {
     return '';
   } else {
-    'https://opensource.org/licenses/MIT' 
-    return `https://opensource.org/licenses/${license}`
+    return `https://choosealicense.com/licenses/${license.toLowerCase()}`
   }
 }
 
@@ -31,16 +30,21 @@ function renderLicenseSection(license) {
 
 
 // TODO: Create a function to generate markdown for README
-function generateMarkdown({title, description, installation, usage, contributors, test, github, email}) {
-  console.log("genMarkdown linked");
+function generateMarkdown({title, description, installation, usage, contributors, test, github, email, license}) {
+  const licenseBadge = renderLicenseBadge(license);
+  const licenseLink = renderLicenseLink(license);
+  const licenseSection = renderLicenseSection(license);
+  
   return `# ${title}
+  ${licenseBadge}
   ##### Table of Contents  
-[Description](#description)  
-[Installation](#installation)  
-[Usage](#usage)  
-[Contributions](#contributions)  
-[Tests](#tests)  
-[Questions](#questions)  
+  [Description](#description)  
+  [Installation](#installation)  
+  [Usage](#usage)  
+  [Contributions](#contributions)  
+  [Tests](#tests)  
+  [Questions](#questions)  
+  [License](#license)  
 
   ## Description
   ${description}
@@ -60,6 +64,10 @@ function generateMarkdown({title, description, installation, usage, contributors
   ## Questions
   * Github: [${github}](https://www.github.com/${github})
   * Email: <a href="mailto:${email}">${email}</a>
+  
+  ## License
+  ${licenseSection}  
+  ${licenseLink} 
 `;
 }
 

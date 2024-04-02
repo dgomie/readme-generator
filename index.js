@@ -12,6 +12,7 @@ const questions = [
     ['test', "Are there any test instructions?: "],
     ['github', "Please enter your GitHub username: "],
     ['email', "Please enter your email address: "],
+    ['license', "What license are you using?: "]
 ];
 
 // TODO: Create a function to write README file
