@@ -4,7 +4,8 @@ function renderLicenseBadge(license) {
   if (!license) {
     return '';
   } else {
-    return `![GitHub license](https://img.shields.io/badge/license-${license}-blue.svg)`;
+    let formattedLicense = license.replace(/ /g,"_")
+    return `![GitHub license](https://img.shields.io/badge/license-${formattedLicense}-blue.svg)`;
   }
 }
 
@@ -14,7 +15,8 @@ function renderLicenseLink(license) {
   if (!license) {
     return '';
   } else {
-    return `https://choosealicense.com/licenses/${license.toLowerCase()}`
+    let formattedLicense = license.replace(/ /g,"-")
+    return `https://choosealicense.com/licenses/${formattedLicense.toLowerCase()}`
   }
 }
 

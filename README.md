@@ -1,5 +1,5 @@
-# test
-  ![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)
+# 
+  ![GitHub license](https://img.shields.io/badge/license-MPL_2.0-blue.svg)
   ##### Table of Contents  
   [Description](#description)  
   [Installation](#installation)  
@@ -10,7 +10,7 @@
   [License](#license)  
 
   ## Description
-  test
+  
 
   ## Installation
   
@@ -29,5 +29,5 @@
   * Email: <a href="mailto:"></a>
   
   ## License
-  This application is covered under the MIT license  
-  https://choosealicense.com/licenses/mit 
+  This application is covered under the MPL 2.0 license  
+  https://choosealicense.com/licenses/mpl-2.0 
