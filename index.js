@@ -37,7 +37,7 @@ function init() {
           name: question[1],
         };
         if (question[0] === 'list') {
-          obj.choices = ['MIT', 'Apache 2.0', 'GPL 3.0', 'BSD 3', 'MPL 2.0']; 
+          obj.choices = ['MIT', 'Apache 2.0', 'GPL 3.0', 'BSD 3', 'MPL 2.0', 'None']; 
         }
         return obj;
       })
