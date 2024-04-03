@@ -9,7 +9,7 @@ const questions = [
   ["input","installation","What is the project's installation instructions?: "],
   ["input", "usage", "What is the usage information?: "],
   ["input", "contributors", "Who else contributed to the project?: "],
-  ["input", "test", "What command is needed to run tests?: "],
+  ["input", "test", "What do you need to input to run tests?: "],
   ["input", "github", "Please enter your GitHub username: "],
   ["input", "email", "Please enter your email address: "],
   ["list", "license", "What license are you using?: "],
@@ -17,8 +17,8 @@ const questions = [
 
 // TODO: Create a function to write README file
 function writeToFile(data) {
-  fs.writeFile("README.md", data, (err) =>
-    err ? console.error(err) : console.log(`README.md created!`)
+  fs.writeFile("generatedREADME.md", data, (err) =>
+    err ? console.error(err) : console.log(`generatedREADME.md created!`)
   );
 }
 

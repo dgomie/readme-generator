@@ -36,7 +36,7 @@ The user will see questions regarding the project. In the terminal, type in the 
 
 ![Screenshot of terminal displaying prompts for README generator](./assets/images/readme-gen.png)
 
-Once all questions are answered, if successful, a final prompt will display saying "README.md created!". The new markdown file will be created within the main project folder with the user provided information formatted in a professional README.
+Once all questions are answered, if successful, a final prompt will display saying "generatedREADME.md created!". A new markdown file called ```generatedREADME.md``` will be created within the main project folder with the user provided information formatted in a professional README.
 
 ## Contributions
 
