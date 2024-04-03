@@ -6,14 +6,10 @@ const fs = require("fs");
 const questions = [
   ["input", "title", "What is the project title?: "],
   ["input", "description", "What is the project description?: "],
-  [
-    "input",
-    "installation",
-    "What is the project's installation instructions?: ",
-  ],
+  ["input","installation","What is the project's installation instructions?: "],
   ["input", "usage", "What is the usage information?: "],
   ["input", "contributors", "Who else contributed to the project?: "],
-  ["input", "test", "Are there any test instructions?: "],
+  ["input", "test", "What command is needed to run tests?: "],
   ["input", "github", "Please enter your GitHub username: "],
   ["input", "email", "Please enter your email address: "],
   ["list", "license", "What license are you using?: "],
@@ -43,7 +39,6 @@ function init() {
       })
     )
     .then((answers) => {
-      console.log(answers);
       const markdown = generateMarkdown(answers);
       writeToFile(markdown);
     })

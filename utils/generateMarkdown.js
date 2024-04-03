@@ -72,7 +72,9 @@ function generateMarkdown({
   ## Tests
   ${test}
 
+
   ## Questions
+  For any questions regarding the repository, contact me via:
   * Github: [${github}](https://www.github.com/${github})
   * Email: <a href="mailto:${email}">${email}</a>
   
