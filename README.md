@@ -38,6 +38,9 @@ The user will see questions regarding the project. In the terminal, type in the 
 
 Once all questions are answered, if successful, a final prompt will display saying "generatedREADME.md created!". A new markdown file called ```generatedREADME.md``` will be created within the main project folder with the user provided information formatted in a professional README.
 
+## Video Walkthrough
+For a video demonstration of this application [click here](https://drive.google.com/file/d/1NIR-Lh6B1cYJHNv0WUSicYCphygRZuA6/view?usp=drive_link)
+
 ## Contributions
 
 [Starter code](https://github.com/gachoi06) provided by Github users:  
