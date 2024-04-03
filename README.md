@@ -14,7 +14,7 @@
 
 ## Description
 
-This is a project that takes user prompts through a CLI and generates a professional README markdown file. This helps project creators cut down time having to reference different resource to make sure all necessary information is presented in the README.
+This application takes user prompts through a CLI and generates a professional README markdown file. This application is intended to help users cut down time having to format the necessary information that is typically presented in sa professional README. This application utilizes node.js with the Inquirer and File System modules to prompt the user for information and create a new file respectively. 
 
 ## Installation
 
